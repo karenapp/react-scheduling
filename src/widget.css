@@ -1,0 +1,148 @@
+html,body{
+    height:100%
+}
+body{
+    overflow:auto
+}
+.karen-inline-widget,.karen-inline-widget *,.karen-badge-widget,.karen-badge-widget *,.karen-overlay,.karen-overlay *{
+    font-size:16px;
+    line-height:1.2em
+}
+.karen-inline-widget iframe,.karen-badge-widget iframe,.karen-overlay iframe{
+    display:inline;
+    width:100%;
+    height:100%
+}
+.karen-popup-content{
+    position:relative
+}
+.karen-popup-content.karen-mobile{
+    -webkit-overflow-scrolling:touch;
+    overflow-y:auto
+}
+.karen-overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    overflow:hidden;
+    z-index:9999;
+    background-color:#a5a5a5;
+    background-color:rgba(31,31,31,0.4)
+}
+.karen-overlay .karen-close-overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0
+}
+.karen-overlay .karen-popup{
+    box-sizing:border-box;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translateY(-50%) translateX(-50%);
+    transform:translateY(-50%) translateX(-50%);
+    width:80%;
+    min-width:900px;
+    max-width:1000px;
+    height:90%;
+    max-height:680px
+}
+@media (max-width: 975px){
+    .karen-overlay .karen-popup{
+        position:fixed;
+        top:50px;
+        left:0;
+        right:0;
+        bottom:0;
+        -webkit-transform:none;
+        transform:none;
+        width:100%;
+        height:auto;
+        min-width:0;
+        max-height:none
+    }
+}
+.karen-overlay .karen-popup .karen-popup-content{
+    height:100%
+}
+.karen-overlay .karen-popup-close{
+    position:absolute;
+    top:25px;
+    right:25px;
+    color:#fff;
+    width:19px;
+    height:19px;
+    cursor:pointer;
+    background-size:contain
+}
+@media (max-width: 975px){
+    .karen-overlay .karen-popup-close{
+        top:15px;
+        right:15px
+    }
+}
+.karen-badge-widget{
+    position:fixed;
+    right:20px;
+    bottom:15px;
+    z-index:9998
+}
+.karen-badge-widget .karen-badge-content{
+    display:table-cell;
+    width:auto;
+    height:45px;
+    padding:0 30px;
+    border-radius:25px;
+    box-shadow:rgba(0,0,0,0.25) 0 2px 5px;
+    font-family:sans-serif;
+    text-align:center;
+    vertical-align:middle;
+    font-weight:bold;
+    font-size:14px;
+    color:#fff;
+    cursor:pointer
+}
+.karen-badge-widget .karen-badge-content.karen-white{
+    color:#666a73
+}
+.karen-badge-widget .karen-badge-content span{
+    display:block;
+    font-size:12px
+}
+.karen-spinner{
+    position:absolute;
+    top:50%;
+    left:0;
+    right:0;
+    -webkit-transform:translateY(-50%);
+    transform:translateY(-50%);
+    text-align:center;
+    z-index:-1
+}
+.karen-spinner>div{
+    border: 6px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 6px solid #3498db;
+    width: 48px;
+    height: 48px;
+  
+    display:inline-block;
+    background-color:#e0e0e0;
+    vertical-align:middle;
+    -webkit-animation:spin 2s linear infinite;
+    animation:spin 2s linear infinite;
+    -webkit-animation-fill-mode:both;animation-fill-mode:both
+}
+
+@-webkit-keyframes spin{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
