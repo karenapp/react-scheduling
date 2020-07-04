@@ -1,5 +1,5 @@
-import InlineWidget from "./components/InlineWidget";
-import PopupWidget from "./components/PopupWidget";
-import PopupText from "./components/PopupText";
+import InlineWidget from "./components/InlineWidget.js";
+import PopupWidget from "./components/PopupWidget.js";
+import PopupText from "./components/PopupText.js";
 
 export { InlineWidget, PopupWidget, PopupText };

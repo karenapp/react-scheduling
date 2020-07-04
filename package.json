@@ -1,34 +1,46 @@
 {
-  "name": "react-karen",
+  "name": "react-scheduling",
   "version": "1.0.0",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch",
+    "build": "webpack"
   },
-  "description": "> [Karen integration](https://karen.io) for React apps",
-  "main": "src/index.js",
+  "description": "[Karen integration](https://karen.io) for React apps",
+  "main": "build/index.js",
+  "peerDependencies": {
+    "react": "^16.3.0"
+  },
+  "dependencies": {
+    "react": "^16.3.0",
+    "webpack": "^2.6.1"
+  },
   "devDependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^3.6.0",
+    "style-loader": "^1.2.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codecraf8/react-karen.git"
+    "url": "git+https://github.com/karenapp/react-scheduling.git"
   },
   "keywords": [
     "react",
     "karen"
   ],
-  "author": "",
+  "author": {
+    "name": "Karen app",
+    "email": "npm@karenapp.io"
+  },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/codecraf8/react-karen/issues"
+    "url": "https://github.com/karenapp/react-scheduling/issues"
   },
-  "homepage": "https://github.com/codecraf8/react-karen#readme"
+  "homepage": "https://github.com/karenapp/react-scheduling#readme"
 }
